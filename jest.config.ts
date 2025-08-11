@@ -17,7 +17,7 @@ const config: Config = {
   /**When you set up path aliases in Next.js (like @/components/Button instead of ../../../components/Button), Next.js automatically understands these paths because it reads your tsconfig.json. However, Jest runs completely separately and has no idea what @/ means. */
   moduleNameMapper: {
     // Map @/* to <rootDir>/* (everything in project root)
-    '^@/(.*)$': '<rootDir>/$1'
+    '^@/(.*)$': '<rootDir>/app/$1'
   }
 
   // Add more setup options before each test is run
